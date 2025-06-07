@@ -18,6 +18,11 @@ async function loadWeather(city) {
     document.querySelector(".temp").textContent = `${temp}°C`;
     document.querySelector(".wind h4").textContent = `${wind}Km/h`;
     document.querySelector(".humidity h4").textContent = `${humidity}%`;
+
+    // Show the card content with animation
+    const cardContent = document.querySelector('.card-content');
+    cardContent.classList.remove('hidden');
+    cardContent.classList.add('visible');
 }
 
 searchButton.addEventListener("click", () => loadWeather(cityInput.value));
