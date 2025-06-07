@@ -40,12 +40,13 @@ async function loadWeather(city) {
 
 function updateWeather(weather){
     let bgImage = "images/cloudy2.jpg";
+    const w = weather.toLowerCase();
     
-    if (weather === "Clear") {
+    if (w === "clear") {
         bgImage = "images/clear-sky.jpg";
-    } else if (weather === "Rain") {
+    } else if (w === "rain") {
         bgImage = "images/rainy-sky.webp";
-    } else if (weather === "Snow") {
+    } else if (w === "snow") {
         bgImage = "images/snowy-sky.webp";
     }
 
