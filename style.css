@@ -1,0 +1,86 @@
+body {
+    font-family: Arial;
+    background-image: url(images/cloudy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.card {
+    backdrop-filter: blur(30px);
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    width: 500px;
+}
+
+.search {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.search input {
+    background-color: whitesmoke;
+    color: gray;
+    padding-left: 10px;
+    margin-right: 5px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    height: 50px;
+    width: 70%;
+    font-size: 25px;
+}
+
+.search button {
+    background-color: azure;
+    border-radius: 10px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: lightsalmon;
+    scale: 1.1;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.temp {
+    font-size: 50px;
+    text-align: center;
+}
+
+.city {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -30px;
+}
+
+.details {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.humidity img,
+.wind img {
+    width: 70px;
+}
